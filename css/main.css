@@ -12,6 +12,10 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3%;
 }
 
 .polaroid > img {
@@ -22,4 +26,37 @@ html {
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75%;
+}
+
+.polaroid:nth-child(1) {
+transform: translate(-200px, 0px) rotate(-10deg);
+}
+
+.polaroid:nth-child(1):hover {
+  transform: translate(-200px, 0px) rotate(0deg);
+  box-shadow: 5px 5px 10px;
+  transition: all .2s linear;
+}
+
+.polaroid:nth-child(2) {
+  transform: translate(-100px, 50px)
+}
+
+.polaroid:nth-child(2):hover {
+  box-shadow: 5px 5px 10px;
+  transition: all .2s linear;
+}
+
+.polaroid:nth-child(3) {
+  transform: translate(10px, 0px) rotate(20deg);
+}
+
+.polaroid:nth-child(3):hover {
+  transform: rotate(0deg);
+  box-shadow: 5px 5px 10px;
+  transition: all .2s linear;
 }
